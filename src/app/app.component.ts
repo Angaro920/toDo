@@ -6,6 +6,8 @@ import { Item } from './item';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
+
 export class AppComponent {
   title = 'toDo';
 
@@ -35,4 +37,5 @@ export class AppComponent {
   remove(item: Item){
     this.allItems.splice(this.allItems.indexOf(item),1);
   }
+  
 }
